@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url(../src/background.png) fixed #202020 center;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.home {
+    height: 5vh;
+    position: absolute;
+    left: 1.3vw;
+    top: 3.5vh;
+}
+
+.shop {
+    height: 5vh;
+    position: absolute;
+    left: 5vw;
+    top: 3.5vh;
+}
+
+
+h1 {
+    color: white;
+    font-size: 7vh;
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+}
+
+textarea {
+    font-size: 3vh;
+    resize: none;
+    width: 30vw;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    padding-left: 1vw;
+    background-color: #464646;
+    color: #C0C0C0;
+    border-radius: 9px;
+    border: 1px solid #C0C0C0;
+    vertical-align: middle;
+}
+
+#username {
+    margin-left: -15vw;
+    position: absolute;
+    top: 42.5vh;
+    left: 50vw;
+}
+
+#password {
+    margin-left: -15vw;
+    position: absolute;
+    top: 53vh;
+    left: 50vw;
+}
+
+button {
+    width: 13vw;
+    margin-left: -6.5vw;
+    background: transparent;
+    border: 0px;
+    position: absolute;
+    top: 67vh;
+    left: 50vw;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.parallelogram {
+    width: 13vw;
+}
