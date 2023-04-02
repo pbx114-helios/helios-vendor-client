@@ -6,6 +6,7 @@ body {
     background: #202020;
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .title {
@@ -63,11 +64,30 @@ a {
 #notes {
     position: absolute;
     left: 4vw;
-    top: 80vh;
+    top: 85vh;
     width: 30vw;
-    height: 10vh;
+    height: 10.5vh;
     background-color: #464646;
     border: 1px solid #7e7e7e;
     border-radius: 3px;
     color: white;
+}
+
+.actions {
+    width: 17vw;
+    height: 6vh;
+    position: absolute;
+    top: 90vh;
+    left: 63vw;
+    background-color: #FD7D00;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#second-action {
+    margin-left: 18vw;
 }
