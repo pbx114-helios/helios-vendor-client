@@ -71,6 +71,7 @@ a {
     border: 1px solid #7e7e7e;
     border-radius: 3px;
     color: white;
+    resize: none;
 }
 
 .actions {

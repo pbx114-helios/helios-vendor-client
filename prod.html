@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/prod.css">
 </head>
 
-<body>
+<body onunload="logout()">
     <h2 class="title"> Order by: Faizaan Nasir </h2>
     <div class="navbar">
         <div class="nav-element"><a href="#">Main Page</a></div>
@@ -41,9 +41,25 @@
         <br>
         AED 200
     </div>
-    <input type="text" name="notes" id="notes">
+    <textarea name="notes" id="notes" placeholder="Extra notes"></textarea>
     <button class="actions">View Next Order</button>
     <button class="actions" id="second-action">SEND MAIL to customer</button>
+    <!-- <script>
+        function logout() {
+            let name = document.getElementById("username").value;
+            let pwd = document.getElementById("password").value;
+            const form_data = { password: pwd, username: name };
+            const url = "http://localhost:3000/vendor/logout";
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify(form_data),
+                headers: {
+                    "Content-Type": "application/json",
+                    "SameSite": "None"
+                },
+            })
+        }
+    </script> -->
 </body>
 
 </html>
