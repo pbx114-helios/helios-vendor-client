@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
     <script src="./scripts/check.js"></script>
-    <script src="./scripts/load.js"></script>
 </head>
 
 <body onload="check()">
@@ -26,22 +26,16 @@
             <span class="info">Order: </span> <span>2x Hoodies</span><br>
             <a class="view-more">View More</a>
         </div>
-        <div class="order">
-            <span class="info">Name: </span> <span>Faizaan Nasir</span><br>
-            <span class="info">Order: </span> <span>2x Hoodies</span><br>
-            <a class="view-more">View More</a>
-        </div>
-        <div class="order">
-            <span class="info">Name: </span> <span>Faizaan Nasir</span><br>
-            <span class="info">Order: </span> <span>2x Hoodies</span><br>
-            <a class="view-more">View More</a>
-        </div>
-        <div class="order">
-            <span class="info">Name: </span> <span>Faizaan Nasir</span><br>
-            <span class="info">Order: </span> <span>2x Hoodies</span><br>
-            <a class="view-more">View More</a>
-        </div>
     </div>
+    <script src="./scripts/apiFuncs.js"></script>
+    <script src="./scripts/frontendFuncs.js"></script>
+    <script>
+        getAllOrders().then((data) => {
+            for (const order of data.orders){
+                createOrderCard(order)
+            }
+        })
+    </script>
 </body>
 
 </html>
